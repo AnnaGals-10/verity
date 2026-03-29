@@ -1,0 +1,15 @@
+langchain
+langchain-community
+langchain-openai
+langchain-text-splitters
+langchain-classic
+langchain-core
+faiss-cpu
+pypdf
+python-dotenv
+streamlit
+reportlab
+tavily-python
+fastapi
+uvicorn
+cryptography
