@@ -1,3 +1,4 @@
+# Python dependencies for fact-checking system
 langchain
 langchain-community
 langchain-openai
