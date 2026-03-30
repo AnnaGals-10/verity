@@ -1,3 +1,4 @@
+"""Module for extracting claims and facts from documents."""
 from langchain_openai import ChatOpenAI
 import json
 import trafilatura
