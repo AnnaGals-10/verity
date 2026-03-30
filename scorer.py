@@ -1,3 +1,4 @@
+"""Module for scoring source reliability and confidence levels."""
 from urllib.parse import urlparse
 
 DOMAIN_SCORES = {
