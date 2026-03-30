@@ -1,5 +1,5 @@
 """
-Lexis Verify API — FastAPI endpoints
+Verity AI API — FastAPI endpoints
 Run: uvicorn api:app --reload
 """
 from fastapi import FastAPI, UploadFile, File, HTTPException
@@ -15,7 +15,7 @@ from extractor import extract_claims, extract_text_from_pdf, detect_language
 from verifier import verify_all_claims
 from scorer import overall_score
 
-app = FastAPI(title="Lexis Verify API", version="1.0.0",
+app = FastAPI(title="Verity AI API", version="1.0.0",
               description="AI-powered fact-checking API")
 
 app.add_middleware(CORSMiddleware, allow_origins=["*"],
@@ -27,7 +27,7 @@ class TextRequest(BaseModel):
 
 @app.get("/")
 def root():
-    return {"name": "Lexis Verify API", "version": "1.0.0", "status": "ok"}
+    return {"name": "Verity AI API", "version": "1.0.0", "status": "ok"}
 
 @app.post("/verify/text")
 def verify_text(req: TextRequest):
