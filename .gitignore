@@ -1,3 +1,4 @@
+# Environment and dependency files
 .env
 uploads/
 __pycache__/
