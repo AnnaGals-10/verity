@@ -15,7 +15,7 @@ from scorer import overall_score, verdict_color, tier
 HISTORY_FILE = os.path.join(os.path.dirname(__file__), "history.json")
 UPLOADS_DIR  = os.path.join(os.path.dirname(__file__), "uploads")
 
-st.set_page_config(page_title="Lexis Verify", page_icon="◎",
+st.set_page_config(page_title="Verity AI", page_icon="◎",
                    layout="wide", initial_sidebar_state="collapsed")
 
 # ── Session state ─────────────────────────────────────────────────────────────
@@ -145,7 +145,7 @@ html, body, [class*="css"] { font-family: 'DM Sans', sans-serif; background: #08
 # ── Nav ───────────────────────────────────────────────────────────────────────
 st.markdown("""
 <div class="nav">
-  <div class="nav-logo">Lexis <span>Verify</span></div>
+  <div class="nav-logo">Verity <span>AI</span></div>
   <div class="nav-tag">AI Fact-Checking</div>
 </div>
 """, unsafe_allow_html=True)
@@ -266,7 +266,7 @@ with tab_verify:
             if st.button("Export PDF"):
                 buf = generate_report(title, results, lang)
                 st.download_button("Download report", data=buf,
-                    file_name=f"lexis_verify_{datetime.now().strftime('%Y%m%d')}.pdf",
+                    file_name=f"verity_{datetime.now().strftime('%Y%m%d')}.pdf",
                     mime="application/pdf")
 
         st.markdown('<hr class="div">', unsafe_allow_html=True)
