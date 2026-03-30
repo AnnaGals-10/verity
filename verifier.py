@@ -1,3 +1,4 @@
+"""Module for verifying facts using web search and LLM analysis."""
 from langchain_openai import ChatOpenAI
 from langchain_community.tools.tavily_search import TavilySearchResults
 from scorer import score_source
