@@ -1,3 +1,4 @@
+"""Module for comparing and analyzing semantic similarity between documents."""
 from langchain_openai import ChatOpenAI
 import json
 
